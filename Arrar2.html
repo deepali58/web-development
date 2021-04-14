@@ -1,0 +1,26 @@
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array </h2>
+
+<p>Click the button to the array in grater than.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var points = [1,,2,10,30,49,56,53,44,8,9,57,68];
+document.getElementById("demo").innerHTML = points;
+
+function myFunction() {
+  points.sort(function(a, b){return b - a});
+  document.getElementById("demo").innerHTML = points;
+}
+</script>
+
+</body>
+</html>
